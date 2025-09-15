@@ -1,0 +1,13 @@
+初始创建
+git add .
+git commit -m "init"
+git push
+然后复制GitHub上现成文件
+单个文件
+git add 文件名
+git commit -m "文件名"
+git push
+删除文件：先删文件
+git add 文件名
+git commit -m "删除文件"
+git push
