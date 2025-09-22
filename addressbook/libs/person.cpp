@@ -1,21 +1,6 @@
+#include "../include/struct.hpp"
 #include <iostream>
 using namespace std;
-#include <string>
-#define MAX 1000
-
-// 联系人结构体
-struct Person {
-  string memName;
-  int memSex; // 1 男 2 女
-  int memAge;
-  string memPhone;
-  string memAddr;
-};
-// 通讯录结构体
-struct Addressbooks {
-  struct Person personArray[MAX];
-  int memSize;
-};
 
 // 1.添加联系人
 void addPerson(Addressbooks *abs) {
@@ -218,58 +203,4 @@ void cleanPerson(Addressbooks *abs) {
   cout << "通讯录已清空！" << endl;
   system("pause");
   system("cls");
-}
-
-// 菜单界面
-void showMenu() {
-  cout << "1、添加联系人" << endl;
-  cout << "2、显示联系人" << endl;
-  cout << "3、删除联系人" << endl;
-  cout << "4、查找联系人" << endl;
-  cout << "5、修改联系人" << endl;
-  cout << "6、清空联系人" << endl;
-  cout << "0、退出通讯录" << endl;
-}
-
-int main() {
-  // 创建通讯录结构体变量
-  Addressbooks abs1;
-  // 初始化通讯录中人员个数
-  abs1.memSize = 0;
-
-  int select = 0;
-
-  while (true) {
-    // 菜单调用
-    showMenu();
-    cin >> select;
-    switch (select) {
-    case 1: // 1、添加联系人
-      addPerson(&abs1);
-      break;
-    case 2: // 2、显示联系人
-      showPerson(&abs1);
-      break;
-    case 3: // 3、删除联系人
-      deletePerson(&abs1);
-      break;
-    case 4: // 4、查找联系人
-      findPerson(&abs1);
-      break;
-    case 5: // 5、修改联系人
-      modifyPerson(&abs1);
-      break;
-    case 6: // 6、清空联系人
-      cleanPerson(&abs1);
-      break;
-    case 0: // 0、退出通讯录
-      cout << "欢迎下次使用" << endl;
-      return 0;
-      break;
-    default:
-      break;
-    }
-  }
-
-  return 0;
 }

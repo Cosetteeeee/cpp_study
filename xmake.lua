@@ -29,12 +29,9 @@ add_linkdirs("C:/Users/cosette/scoop/apps/llvm-mingw/current/x86_64-w64-mingw32/
 add_runenvs("PATH", "C:/Users/cosette/scoop/apps/llvm-mingw/current/bin")
 add_runenvs("PATH", "C:/Users/cosette/scoop/apps/llvm-mingw/current/x86_64-w64-mingw32/bin")
 
-target("hello_modules")
+target("addressbook")
     set_kind("binary")
 
-    add_files("src/*.cpp")
-    add_files("src/libs/*.cxx")
-    add_headerfiles("src/include/*.hxx")
-
-    -- 添加模块文件
-    add_files("src/modules/*.mxx")
+    add_files("addressbook/*.cpp")
+    add_files("addressbook/libs/*.cpp")
+    add_headerfiles("addressbook/include/*.hpp")

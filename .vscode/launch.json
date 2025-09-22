@@ -9,7 +9,7 @@
     "type": "lldb",
     "request": "launch",
     "name": "Launch",
-    "program": "${workspaceFolder}/build/windows/x64/debug/hello_modules.exe",
+    "program": "${workspaceFolder}/build/windows/x64/debug/addressbook.exe",
     "args": [],
     "cwd": "${workspaceFolder}",
     "preLaunchTask": "xmake build",
