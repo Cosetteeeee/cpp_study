@@ -134,7 +134,7 @@ void findPerson(Addressbooks *abs) {
 }
 
 // 5.修改联系人
-int modifyPerson(Addressbooks *abs) {
+void modifyPerson(Addressbooks *abs) {
   string name;
   cout << "请输入需修改联系人的姓名：" << endl;
   cin >> name;
@@ -197,7 +197,9 @@ int modifyPerson(Addressbooks *abs) {
         break;
       }
       case 0:
-        return 0;
+        system("pause");
+        system("cls");
+        return;
         break;
       default:
         break;
