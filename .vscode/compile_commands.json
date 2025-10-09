@@ -1,11 +1,26 @@
 [
 {
   "directory": "c:\\Users\\cosette\\Code\\cpp",
-  "arguments": ["C:/Users/cosette/scoop/apps/llvm-mingw/current/bin/clang++.exe", "-c", "-Qunused-arguments", "-m64", "--target=x86_64-windows-msvc", "-g", "-O0", "-std=c++23", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include\\c++\\v1", "-fexceptions", "-fcxx-exceptions", "--target=x86_64-w64-mingw32", "-stdlib=libc++", "-o", "build\\.objs\\addressbook\\windows\\x64\\debug\\addressbook\\main.cpp.obj", "addressbook\\main.cpp"],
+  "arguments": ["C:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\bin\\clang.exe", "-c", "--target=x86_64-w64-mingw32", "-stdlib=libc++", "-Wno-macro-redefined", "-Qunused-arguments", "-g", "-O0", "-std=c++23", "-fexceptions", "-fcxx-exceptions", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include\\c++\\v1", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include", "-o", "build\\.objs\\addressbook\\windows\\x64\\debug\\addressbook\\main.cpp.obj", "addressbook\\main.cpp"],
   "file": "addressbook\\main.cpp"
 },
 {
   "directory": "c:\\Users\\cosette\\Code\\cpp",
-  "arguments": ["C:/Users/cosette/scoop/apps/llvm-mingw/current/bin/clang++.exe", "-c", "-Qunused-arguments", "-m64", "--target=x86_64-windows-msvc", "-g", "-O0", "-std=c++23", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include\\c++\\v1", "-fexceptions", "-fcxx-exceptions", "--target=x86_64-w64-mingw32", "-stdlib=libc++", "-o", "build\\.objs\\addressbook\\windows\\x64\\debug\\addressbook\\libs\\person.cpp.obj", "addressbook\\libs\\person.cpp"],
+  "arguments": ["C:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\bin\\clang.exe", "-c", "--target=x86_64-w64-mingw32", "-stdlib=libc++", "-Wno-macro-redefined", "-Qunused-arguments", "-g", "-O0", "-std=c++23", "-fexceptions", "-fcxx-exceptions", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include\\c++\\v1", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include", "-o", "build\\.objs\\addressbook\\windows\\x64\\debug\\addressbook\\libs\\person.cpp.obj", "addressbook\\libs\\person.cpp"],
   "file": "addressbook\\libs\\person.cpp"
+},
+{
+  "directory": "c:\\Users\\cosette\\Code\\cpp",
+  "arguments": ["C:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\bin\\clang.exe", "-c", "--target=x86_64-w64-mingw32", "-stdlib=libc++", "-Wno-macro-redefined", "-Qunused-arguments", "-g", "-O0", "-std=c++23", "-fexceptions", "-fcxx-exceptions", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include\\c++\\v1", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include", "-o", "build\\.objs\\staffmanagement\\windows\\x64\\debug\\staffmanagement\\main.cpp.obj", "staffmanagement\\main.cpp"],
+  "file": "staffmanagement\\main.cpp"
+},
+{
+  "directory": "c:\\Users\\cosette\\Code\\cpp",
+  "arguments": ["C:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\bin\\clang.exe", "-c", "--target=x86_64-w64-mingw32", "-stdlib=libc++", "-Wno-macro-redefined", "-Qunused-arguments", "-g", "-O0", "-std=c++23", "-fexceptions", "-fcxx-exceptions", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include\\c++\\v1", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include", "-o", "build\\.objs\\staffmanagement\\windows\\x64\\debug\\staffmanagement\\libs\\WorkerManager.cpp.obj", "staffmanagement\\libs\\WorkerManager.cpp"],
+  "file": "staffmanagement\\libs\\WorkerManager.cpp"
+},
+{
+  "directory": "c:\\Users\\cosette\\Code\\cpp",
+  "arguments": ["C:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\bin\\clang.exe", "-c", "-Qunused-arguments", "-g", "-O0", "-std=c99", "-IC:\\Users\\cosette\\scoop\\apps\\llvm-mingw\\current\\include", "-o", "build\\.objs\\c\\windows\\x64\\debug\\c\\main.c.obj", "c\\main.c"],
+  "file": "c\\main.c"
 }]
