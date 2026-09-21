@@ -4,7 +4,7 @@
     {
       "label": "xmake build",
       "type": "shell",
-      "command": "xmake config -m debug && xmake",
+      "command": "xmake f -m debug && xmake build",
       "problemMatcher": []
     }
   ]

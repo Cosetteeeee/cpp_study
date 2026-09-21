@@ -11,3 +11,8 @@ git push
 git add 文件名
 git commit -m "删除文件"
 git push
+
+删除build后
+xmake f -p mingw -c --sdk=C:/msys64/ucrt64
+再
+xmake build

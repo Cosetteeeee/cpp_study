@@ -1,4 +1,7 @@
 #include <iostream>
+#ifdef _WIN32
+#include <windows.h>
+#endif
 using namespace std;
 #include "include/person.hpp"
 
@@ -14,6 +17,10 @@ void showMenu() {
 }
 
 int main() {
+#ifdef _WIN32
+  SetConsoleOutputCP(CP_UTF8);
+  SetConsoleCP(CP_UTF8);
+#endif
   // 创建通讯录结构体变量
   Addressbooks abs1;
   // 初始化通讯录中人员个数

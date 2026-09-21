@@ -8,16 +8,7 @@
       "type": "lldb",
       "request": "launch",
       "name": "Launch addressbook",
-      "program": "${workspaceFolder}/build/windows/x64/debug/addressbook.exe",
-      "args": [],
-      "cwd": "${workspaceFolder}",
-      "preLaunchTask": "xmake build"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "Launch c",
-      "program": "${workspaceFolder}/build/windows/x64/debug/c.exe",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/addressbook.exe",
       "args": [],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "xmake build"
@@ -26,7 +17,34 @@
       "type": "lldb",
       "request": "launch",
       "name": "Launch staffmanagement",
-      "program": "${workspaceFolder}/build/windows/x64/debug/staffmanagemen.exe",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/staffmanagement.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch cpp",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/cpp.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch c",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/c.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch SeqList",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/SeqList.exe",
       "args": [],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "xmake build"
