@@ -48,6 +48,33 @@
       "args": [],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch SLL",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/SLL.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch Josephus",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/Josephus.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch Polynomial",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/Polynomial.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
     }
   ]
 }
