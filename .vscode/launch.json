@@ -75,6 +75,69 @@
       "args": [],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch SqStack",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/SqStack.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch LinkStack",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/LinkStack.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch BaseConversion",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/BaseConversion.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch BracketMatching",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/BracketMatching.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch Evaluation",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/Evaluation.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch Convert",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/Convert.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch DirectEvaluate",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/DirectEvaluate.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
     }
   ]
 }
