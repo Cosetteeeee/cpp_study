@@ -138,6 +138,24 @@
       "args": [],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch LinkQueue",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/LinkQueue.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch CircleQueue",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/CircleQueue.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
     }
   ]
 }
