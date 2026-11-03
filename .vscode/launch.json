@@ -156,6 +156,24 @@
       "args": [],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch Triangle",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/Triangle.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch DancePartner",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/DancePartner.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
     }
   ]
 }
