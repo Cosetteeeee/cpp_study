@@ -4,6 +4,42 @@ void DancePartner(LinkQueue &men, LinkQueue &women) {
   Dancer man;
   Dancer woman;
   int pair = 0;
+  if (InitQueue(men) != OK) {
+    cout << "男队初始化失败。" << endl;
+    return;
+  }
+  if (InitQueue(women) != OK) {
+    cout << "女队初始化失败。" << endl;
+    DestroyQueue(men);
+    return;
+  }
+  int n;
+  cout << "请输入舞者总人数：";
+  cin >> n;
+
+  if (n < 0) {
+    cout << "舞者人数不能为负数。" << endl;
+    DestroyQueue(men);
+    DestroyQueue(women);
+    return;
+  }
+
+  cout << "请一次性输入所有舞者的姓名和性别（M 表示男，F 表示女）：" << endl;
+
+  for (int i = 0; i < n; i++) {
+    Dancer dancer;
+
+    cin >> dancer.name >> dancer.sex;
+
+    if (dancer.sex == 'M') {
+      EnQueue(men, dancer);
+    } else if (dancer.sex == 'F') {
+      EnQueue(women, dancer);
+    } else {
+      cout << "性别输入错误，请输入 M 或 F。" << endl;
+      i--;
+    }
+  }
   while (!QueueEmpty(men) && !QueueEmpty(women)) {
     DeQueue(men, man);
     DeQueue(women, woman);
@@ -29,6 +65,10 @@ void DancePartner(LinkQueue &men, LinkQueue &women) {
   } else {
     cout << "所有舞者均已完成配对，无人等待。" << endl;
   }
+
+  // 释放队列
+  DestroyQueue(men);
+  DestroyQueue(women);
 }
 
 int main() {
