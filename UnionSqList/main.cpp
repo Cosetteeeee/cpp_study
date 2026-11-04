@@ -14,16 +14,25 @@ int main() {
     return 0;
   }
 
-  // A = (7, 5, 3, 11)
-  ListInsert(A, 1, 7);
-  ListInsert(A, 2, 5);
-  ListInsert(A, 3, 3);
-  ListInsert(A, 4, 11);
+  int n;
+  int m;
+  ElemType e;
 
-  // B = (2, 6, 3)
-  ListInsert(B, 1, 2);
-  ListInsert(B, 2, 6);
-  ListInsert(B, 3, 3);
+  cout << "请输入 A 的元素个数：";
+  cin >> n;
+  cout << "请一次性输入 A 的 " << n << " 个元素：";
+  for (int i = 0; i < n; i++) {
+    cin >> e;
+    ListInsert(A, A.length + 1, e);
+  }
+
+  cout << "请输入 B 的元素个数：";
+  cin >> m;
+  cout << "请一次性输入 B 的 " << m << " 个元素：";
+  for (int i = 0; i < m; i++) {
+    cin >> e;
+    ListInsert(B, B.length + 1, e);
+  }
 
   cout << "创建顺序表 A 和 B：" << endl;
   cout << "A = ";

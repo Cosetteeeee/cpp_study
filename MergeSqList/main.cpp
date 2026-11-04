@@ -21,20 +21,25 @@ int main() {
     return 0;
   }
 
-  // 有序表 A = (3, 5, 8, 11)
-  ListInsert(A, A.length + 1, 3);
-  ListInsert(A, A.length + 1, 5);
-  ListInsert(A, A.length + 1, 8);
-  ListInsert(A, A.length + 1, 11);
+  int n;
+  int m;
+  ElemType e;
 
-  // 有序表 B = (2, 6, 8, 9, 11, 15, 20)
-  ListInsert(B, B.length + 1, 2);
-  ListInsert(B, B.length + 1, 6);
-  ListInsert(B, B.length + 1, 8);
-  ListInsert(B, B.length + 1, 9);
-  ListInsert(B, B.length + 1, 11);
-  ListInsert(B, B.length + 1, 15);
-  ListInsert(B, B.length + 1, 20);
+  cout << "请输入有序表 A 的元素个数：";
+  cin >> n;
+  cout << "请一次性按升序输入 A 的 " << n << " 个元素：";
+  for (int i = 0; i < n; i++) {
+    cin >> e;
+    ListInsert(A, A.length + 1, e);
+  }
+
+  cout << "请输入有序表 B 的元素个数：";
+  cin >> m;
+  cout << "请一次性按升序输入 B 的 " << m << " 个元素：";
+  for (int i = 0; i < m; i++) {
+    cin >> e;
+    ListInsert(B, B.length + 1, e);
+  }
 
   cout << "A = ";
   ListTraverse(A);
