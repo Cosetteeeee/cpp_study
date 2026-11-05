@@ -192,6 +192,24 @@
       "args": [],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch RecursiveSLL",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/RecursiveSLL.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch RecursiveMaze",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/RecursiveMaze.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/RecursiveMaze",
+      "preLaunchTask": "xmake build"
     }
   ]
 }
