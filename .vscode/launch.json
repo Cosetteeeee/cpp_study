@@ -210,6 +210,15 @@
       "args": [],
       "cwd": "${workspaceFolder}/RecursiveMaze",
       "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch BinaryTree",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/BinaryTree.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/BinaryTree",
+      "preLaunchTask": "xmake build"
     }
   ]
 }
