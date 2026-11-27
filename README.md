@@ -3,25 +3,30 @@
 输入：
 
 ```input
-ABC##DE#G##F###
+ABCDEFG BDCAFEG BDCAFEG DCBFGEA
 ```
 
 输出：
 
 ```output
-输入样例：ABC##DE#G##F###
-输入序列：ABC##DE#G##F###
-先序序列：A B C D E G F
-中序序列：C B E G D F A
-后序序列：C G E F D B A
-非递归先序：A B C D E G F
-非递归中序：C B E G D F A
-层次遍历：A B C D E F G
-树的高度：5
+请依次输入：第一条先序 第一条中序 第二条中序 第二条后序
+ABCDEFG BDCAFEG BDCAFEG DCBFGEA
+先序+中序构造
+先序：A B C D E F G
+中序：B D C A F E G
+后序：D C B F G E A
+层次：A B E C F G D
+树的高度：4
 结点总数：7
 叶子结点数：3
 非叶子结点数：4
-先序序列中第2个结点的值：B
-已删除以B为根的子树。
-二叉树已全部销毁。
+中序+后序构造
+先序：A B C D E F G
+中序：B D C A F E G
+后序：D C B F G E A
+层次：A B E C F G D
+树的高度：4
+结点总数：7
+叶子结点数：3
+非叶子结点数：4
 ```

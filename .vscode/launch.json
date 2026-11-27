@@ -219,6 +219,24 @@
       "args": [],
       "cwd": "${workspaceFolder}/BinaryTree",
       "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch BinarySortTree",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/BinarySortTree.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/BinarySortTree",
+      "preLaunchTask": "xmake build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Launch DualSequenceTree",
+      "program": "${workspaceFolder}/build/mingw/x86_64/debug/DualSequenceTree.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/DualSequenceTree",
+      "preLaunchTask": "xmake build"
     }
   ]
 }
